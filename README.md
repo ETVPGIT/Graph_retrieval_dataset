@@ -8,7 +8,7 @@ The scene graphs are presented in the form of json files, which can be used dire
 
 # Dataset statistics
 
-The dataset contains 3 parts. For each of them, there are 1000 original scene graphs used to generate the disturbed graph. Each original graph is disturbed by three methods: disturbed nodes only, disturbed edges only and both of them. According to each method, it is generated 40 disturbed graphs, respectively. Half of the disturbed graphs are the positive samples and half are negative samples. Thus, each original scene graph is paired with 120 disturbed graph and there will be 120000 graph pairs in total per part. Here is an example of turning a image to scene graph.
+The dataset contains 3 parts. For each of them, there are 1000 original scene graphs used to generate the disturbed graph. Each original graph is disturbed by three methods: disturbed objects only, disturbed relationships only and both of them. According to each method, it is generated 40 disturbed graphs, respectively. Thus, each original scene graph is paired with 120 disturbed graph and there will be 120000 graph pairs in total per part. Here is an example of turning a image to scene graph.
 
 ![](res/example.png)
 
@@ -23,7 +23,7 @@ Here are the details for each part. These semantically similar words will be use
 
 ### Part 1
 
-The semantically similar words of the object's name in this part are selected based on the images corresponding to the bounding boxes of the objects in other scene graphs that are manually viewed and filtered. A total of 101 types of objects have semantically similar words and 10 semantically similar words are selected for each object.
+The semantically similar words of the object's name in this part are selected based on the images corresponding to the bounding boxes of the objects in other scene graphs that are manually viewed and filtered. 10 semantically similar words are selected for each object.
 
 The relationships in this part have no semantically similar words.
 
@@ -31,7 +31,7 @@ In this part, Word2Vec is used to turn the words into semantic vectors.
 
 ### Part 2
 
-The semantically similar words of the object's name in this part are selected from the semantic space of Word2Vec due to the distance between vectors can be used to represent the semantic similarity in text. A total of 101 types of objects have semantically similar words and 10 semantically similar words are selected for each object.
+The semantically similar words of the object's name in this part are selected from the semantic space of Word2Vec due to the distance between vectors can be used to represent the semantic similarity in text. 10 semantically similar words are selected for each object.
 
 The relationships in this part have no semantically similar words.
 
@@ -39,33 +39,33 @@ In this part, Word2Vec is used to turn the words into semantic vectors.
 
 ### Part 3
 
-The semantically similar words of the object's name in this part are selected from the semantic space of ConceptNet. A total of 101 types of objects have semantically similar words and 10 semantically similar words are selected for each object.
+The semantically similar words of the object's name in this part are selected from the semantic space of ConceptNet. 10 semantically similar words are selected for each object.
 
-The semantically similar words of the relationship in this part are also selected from the knowledge base of ConceptNet. A total of 66 types of relationships have semantically similar words and 5 semantically similar words are selected for each object. 
+The semantically similar words of the relationship in this part are also selected from the semantic space of ConceptNet. 5 semantically similar words are selected for each object. 
 
 In this part, ConceptNet is used to turn the words into semantic vectors.
 
 ## Disturbance Strategies
 
-For the chosen 101 objects and 99 relationships, the semantically similar words are used to disturb the scene graphs. There are two disturbance strategies for objects (nodes) and three for relationships (edges), respectively.
+For the chosen 101 objects and 99 relationships, there are two disturbance strategies for objects and three for relationships, respectively.
 
 - For objects, disturbances include modifying some object names with the semantically similar words and deleting some objects.
 
   ![](res/obj_only.png)
 
-- For relationships, disturbances include modifying relationships with the semantically similar words, adding relationships and deleting relationships. 
+- For relationships, disturbances include modifying several relationships with the semantically similar words, adding relationships and deleting relationships. 
 
   ![](res/rela_only.png)
 
 For Part 1 and Part 2 of the dataset, the object disturbed methods use modifying the object's name and deleting the object, the relationship disturbed methods use adding relationships and deleting relationships.
 
-For Part 3 of the dataset,  the object disturbed methods use modifying the object's name and deleting the object, the relationship disturbed methods use modifying relationships and deleting relationships.
+For Part 3 of the dataset, the object disturbed methods use modifying the object's name and deleting the object, the relationship disturbed methods use modifying relationships and deleting relationships.
 
 
 
 # Dataset Format
 
-Each folder contains a scene graph corresponding to the image and three types of disturbed graphs (disturb only objects, disturb only relationships, and disturb objects and relationships). Each scene graph has a corresponding json file and a jpg format diagram. In addition, the GED of the disturbed graph and the original graph are in the folder of each perturbation graph.
+Each folder contains a scene graph corresponding to the image and three types of disturbed graphs (disturb objects, disturb relationships, and disturb objects and relationships). Each scene graph has a corresponding json file and a jpg format diagram. In addition, the GED of the disturbed graph and the original graph are in the folder of each perturbation graph.
 
 
 ![](res/main_figure_1.jpg)
