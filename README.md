@@ -61,24 +61,6 @@ For Part 1 and Part 2 of the dataset, the node disturbed methods use modifying t
 
 For Part 3 of the dataset,  the node disturbed methods use modifying the object's name and deleting the node, the edge disturbed methods use  modifying relationships of edges, adding edges and deleting edges. For relationships that need to be modified with the semantically similar words but do not have any of them, delete the edge.
 
-# Binary Classification Task
-
-For classification tasks, the similarity label is used as the ground truth for labeling.
-
-For the similarity label, the disturbance degree less than 30% is taken as the positive sample of the original scene graph (similar), and the disturbance degree greater than 80% is taken as the negative sample (not similar). 
-
-![](res/binary.png)
-
-
-
-#   Regression Task
-
-For regression tasks, the  Graph Edit Distance (GED) is used as the ground truth for labeling.
-
-For the input scene graph pair, use a method based on Hungarian algorithm to calculate GED between them. The greater the difference between the structure is ,node features or edge features of a pair of scene graphs, the greater the GED is.
-
-![](res/regresion.png)
-
 
 
 # Dataset Format & Download
@@ -86,11 +68,6 @@ For the input scene graph pair, use a method based on Hungarian algorithm to cal
 sg_image directory contains 1000 original image data, file format is jpg
 
 There are a total of 1000 folders in the scene_graph directory. Each folder contains a scene graph corresponding to the image and three types of disturbed graphs (disturb only nodes, disturb only edges, and disturb nodes and edges).  Each scene graph has a corresponding json file and a jpg format diagram. In addition, the similarity label and GED of the disturbed graph and the original graph are in the folder of each perturbation graph.
-
-[Download Dataset]()
-
-[Download Paper]()
-
 
 
 ![](res/main_figure_1.jpg)
