@@ -63,7 +63,7 @@ For Part 3 of the dataset,  the node disturbed methods use modifying the object'
 
 
 
-# Dataset Format & Download
+# Dataset Format
 
 sg_image directory contains 1000 original image data, file format is jpg
 
