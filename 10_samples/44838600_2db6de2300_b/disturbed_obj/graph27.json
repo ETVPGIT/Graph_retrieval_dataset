@@ -1,0 +1,1 @@
+{"filename": "44838600_2db6de2300_b.jpg", "objects": [{"attributes": [], "names": ["woman"]}, {"attributes": [], "names": ["bowl"]}, {"attributes": [], "names": ["counter"]}, {"attributes": [], "names": ["storm_window"]}], "relationships": [{"objects": [0, 2], "relationship": "behind"}, {"objects": [1, 0], "relationship": "near"}, {"objects": [1, 2], "relationship": "on"}]}

@@ -1,0 +1,1 @@
+{"filename": "15535246_bb38d8c73b_b.jpg", "objects": [{"attributes": [], "names": ["box"]}, {"attributes": [], "names": ["sign"]}, {"attributes": [], "names": ["burn_bag"]}, {"attributes": [], "names": ["streeted"]}, {"attributes": [], "names": ["hair"]}], "relationships": [{"objects": [0, 1], "relationship": "has"}, {"objects": [1, 0], "relationship": "on"}]}

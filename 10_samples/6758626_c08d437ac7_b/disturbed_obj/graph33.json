@@ -1,0 +1,1 @@
+{"filename": "6758626_c08d437ac7_b.jpg", "objects": [{"attributes": [], "names": ["paveside"]}, {"attributes": [], "names": ["truck"]}, {"attributes": [], "names": ["biowoman"]}, {"attributes": [], "names": ["window"]}], "relationships": [{"objects": [1, 3], "relationship": "beside"}, {"objects": [2, 1], "relationship": "in"}, {"objects": [3, 1], "relationship": "in front of"}]}

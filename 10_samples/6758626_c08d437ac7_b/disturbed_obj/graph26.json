@@ -1,0 +1,1 @@
+{"filename": "6758626_c08d437ac7_b.jpg", "objects": [{"attributes": [], "names": ["man"]}, {"attributes": [], "names": ["nose"]}, {"attributes": [], "names": ["supply_truck"]}, {"attributes": [], "names": ["career_woman"]}], "relationships": [{"objects": [0, 2], "relationship": "sees"}, {"objects": [3, 2], "relationship": "in"}]}
