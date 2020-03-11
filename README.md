@@ -8,7 +8,7 @@ When constructing the scene semantic graph, each node is built with node index a
 
 The dataset contains 3 parts. For each of them, there are 1000 original scene graphs used to generate the disturbed graph. Each original graph is disturbed by three methods: disturbed objects only, disturbed relationships only and both of them. According to each method, it is generated 40 disturbed graphs, respectively. Thus, each original scene graph is paired with 120 disturbed graph and there will be 120000 graph pairs in total per part. Here is an example of turning a image to scene graph.
 
-![](res/example.png)
+![](res/example_1.png)
 
 ## Semantically Similar Words
 
