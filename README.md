@@ -66,4 +66,4 @@ For Part 3 of the dataset, the object disturbed methods use modifying the object
 Each folder contains a scene graph corresponding to the image and three types of disturbed graphs (disturb objects, disturb relationships, and disturb objects and relationships). Each scene graph has a corresponding json file and a jpg format diagram. In addition, the GED of the disturbed graph and the original graph are in the folder of each perturbation graph.
 
 
-![](res/main_figure_1.jpg)
+
